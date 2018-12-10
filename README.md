@@ -37,6 +37,7 @@ backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
 
 ### Example
+Finally when we execute the script, the following will appear.
 <p align="center">
-  <img width="1090" height="404" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/example.png">
+  <img width="1090" height="330" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/example.png">
 </p>
