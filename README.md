@@ -38,5 +38,5 @@ backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 
 ### Example
 <p align="center">
-  <img width="770" height="363" src="https://github.com/davidahid/Linux-files-browser/blob/master/example.png">
+  <img width="1090" height="404" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/example.png">
 </p>
