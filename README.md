@@ -22,16 +22,19 @@ blkid | cut -d " " -f3 | grep UUID
 
 When we have this two data, we just copy it in the configuration lines of the script.
 ```js
-#---------------------------------------------------- Configuration ----------------------------------------------------
+#------------------------------------------------ Configuration ------------------------------------------------
 
 #Create a variable which gonna have the destinatios disk size.
-#We put the size since it is the simplest method to identify two disks with lsblk, since the rest of values can vary.
+#We put the size since it is the simplest method to identify two disks with lsblk, since the rest of 
+#values can vary.
 #IMPORTANT
-#If we have more than one disk with the same size, we need to be carefull and make sure which is the correct disk.
+#If we have more than one disk with the same size, we need to be carefull and make sure which is the 
+#correct disk.
 backup_size="14.9G"
 
-#Also we may need to insert the UUID of the destination disk (this ID is exclusive for every disk). In this way we can difference
-#between two disk of same sizes. Although the script could only work with this ID, it is better to set two values to make sure the disk is correct...
+#Also we may need to insert the UUID of the destination disk (this ID is exclusive for every disk). 
+#In this way we can difference between two disk of same sizes. Although the script could only work 
+#with this ID, it is better to set two values to make sure the disk is correct...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
 
