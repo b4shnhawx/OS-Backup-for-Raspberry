@@ -24,20 +24,19 @@ When we have this two data, we just copy it in the configuration lines of the sc
 ```js
 #---------------------------------------------------- Configuration ----------------------------------------------------
 
-#Creamos una variable en la que especificamos el tamanio del disco donde queremos hacer la copia de seguridad.
-#Colocamos el tamanio ya que es la forma mas facil de identificar dos discos con el lsblk, ya que el resto de 
-#valores puede cambiar.
-#IMPORTANTE
-#Si tenemos mas de un disco del mismo tamanio deberemos tener cuidado y corroborar que es correcto.
+#Create a variable which gonna have the destinatios disk size.
+#We put the size since it is the simplest method to identify two disks with lsblk, since the rest of values can vary.
+#IMPORTANT
+#If we have more than one disk with the same size, we need to be carefull and make sure which is the correct disk.
 backup_size="14.9G"
 
-#Tambien deberemos insertar el UUID del disco (este ID es unico en cada disco). De esta manera podemos diferenciar 
-#entre dos discos de tamanios iguales. Aunque el script funcionaria solo con este ID, es mejor dejar dos valores por asegurar...
+#Also we may need to insert the UUID of the destination disk (this ID is exclusive for every disk). In this way we can difference
+#between two disk of same sizes. Although the script could only work with this ID, it is better to set two values to make sure the disk is correct...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
 
 ### Example
-Finally when we execute the script, the following will appear.
+Finally when we execute the script, something like this will appear. The disk shown in green it corresponds to the destination disk, the source disk will not have color, and the rest of the disks will appear in red.
 <p align="center">
   <img width="1090" height="330" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/images/example.png">
 </p>
