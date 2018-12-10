@@ -13,15 +13,15 @@ To make sure, I had to run lsblk to see what name had my destination disk. Obviu
 
 ### Configuration
 We need to know first the disk size and UUID of our destination disk. To know it just we need to disconnect all of our disks, less the destination disk, and type the next commands:
-```js
+```sh
 cat /tmp/lsblk_tmp_file | grep disk | tr -s " " | cut -f4 -d" " | tr " " "\t"
 ```
-```js
+```sh
 blkid | cut -d " " -f3 | grep UUID
 ```
 
 When we have this two data, we just copy it in the configuration lines of the script.
-```js
+```sh
 #------------------------------------------------ Configuration ------------------------------------------------
 
 #Create a variable which gonna have the destinatios disk size.
