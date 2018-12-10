@@ -22,17 +22,21 @@ blkid | cut -d " " -f3 | grep UUID
 
 When we have this two data, we just copy it in the configuration lines of the script.
 ```js
-#------------------------------------------------------------- Configuration -------------------------------------------------------------
+#---------------------------------------------------- Configuration ----------------------------------------------------
 
 #Creamos una variable en la que especificamos el tamanio del disco donde queremos hacer la copia de seguridad.
-#Colocamos el tamanio ya que es la forma mas facil de identificar dos discos con el lsblk, ya que el resto de valores puede cambiar.
+#Colocamos el tamanio ya que es la forma mas facil de identificar dos discos con el lsblk, ya que el resto de 
+#valores puede cambiar.
 #IMPORTANTE
 #Si tenemos mas de un disco del mismo tamanio deberemos tener cuidado y corroborar que es correcto.
 backup_size="14.9G"
 
-#Tambien deberemos insertar el UUID del disco (este ID es unico en cada disco). De esta manera podemos diferenciar entre dos discos de tamanios
-#iguales. Aunque el script funcionaria solo con este ID, es mejor dejar dos valores por asegurar...
+#Tambien deberemos insertar el UUID del disco (este ID es unico en cada disco). De esta manera podemos diferenciar 
+#entre dos discos de tamanios iguales. Aunque el script funcionaria solo con este ID, es mejor dejar dos valores por asegurar...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
 
 ### Example
+<p align="center">
+  <img width="770" height="363" src="https://github.com/davidahid/Linux-files-browser/blob/master/example.png">
+</p>
