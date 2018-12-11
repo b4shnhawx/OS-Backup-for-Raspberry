@@ -20,7 +20,7 @@ cat /tmp/lsblk_tmp_file | grep disk | tr -s " " | cut -f4 -d" " | tr " " "\t"
 blkid | cut -d " " -f3 | grep UUID
 ```
 
-When we have this two data, we just copy it in the configuration lines of the script [piclone_lsblk.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk.sh).
+When we have this two data, we just copy it in the configuration lines of the script [piclone_lsblk.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/scripts/piclone_lsblk.sh).
 ```sh
 #------------------------------------------------ Configuration ------------------------------------------------
 
@@ -37,7 +37,7 @@ backup_size="14.9G"
 #with this ID, it is better to set two values to make sure the disk is correct...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
-Also we need to configure the path where the piclone_lsblk.sh will be executed in the script [piclone_lsblk_exe.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk_exe.sh) and in the [Piclone.desktop](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/Piclone.desktop) file.
+Also we need to configure the path where the piclone_lsblk.sh will be executed in the script [piclone_lsblk_exe.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/scripts/piclone_lsblk_exe.sh) and in the [Piclone.desktop](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/scripts/Piclone.desktop) file.
 ```sh
 xfce4-terminal -H --geometry=+0+0 -e '/home/user/our_path' &
 ```
@@ -46,7 +46,7 @@ Exec=bash /home/user/our_path
 ```
 
 ### Example
-Finally when we execute the [Piclone.desktop](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/Piclone.desktop), the scripts will behave as the image.
+Finally when we execute the [Piclone.desktop](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/scripts/Piclone.desktop), the scripts will behave as the image.
 <p align="center">
   <img width="350" height="200" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/images/scheme.png">
 </p>
