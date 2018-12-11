@@ -2,7 +2,7 @@
 ### Description
 This script help you to know in which disk you can make a backup of your Raspbian OS.
 
-### My problem
+### The problem
 I usually use Piclone to back up my Raspbian operating system. When we run this program, the source disk is clear (/dev/mmcblk0), but the target disk is not so when you have two other disks connected to your Raspberry.
 
 <p align="center">
@@ -37,7 +37,10 @@ backup_size="14.9G"
 #with this ID, it is better to set two values to make sure the disk is correct...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
+Also we need to configure the path where the piclone_lsblk.sh will be executed in the script [piclone_lsblk_exe.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk_exe.sh).
+```sh
 
+```
 ### Example
 Finally when we execute the script, something like this will appear. The disk shown in green it corresponds to the destination disk, the source disk will not have color, and the rest of the disks will appear in red.
 <p align="center">
