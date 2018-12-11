@@ -20,7 +20,7 @@ cat /tmp/lsblk_tmp_file | grep disk | tr -s " " | cut -f4 -d" " | tr " " "\t"
 blkid | cut -d " " -f3 | grep UUID
 ```
 
-When we have this two data, we just copy it in the configuration lines of the script.
+When we have this two data, we just copy it in the configuration lines of the script [piclone_lsblk.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk.sh).
 ```sh
 #------------------------------------------------ Configuration ------------------------------------------------
 
