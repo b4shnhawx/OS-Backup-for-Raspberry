@@ -37,9 +37,12 @@ backup_size="14.9G"
 #with this ID, it is better to set two values to make sure the disk is correct...
 backup_uuid="25765c7c-5d3f-488a-85bc-bcb66bfa7c78"
 ```
-Also we need to configure the path where the piclone_lsblk.sh will be executed in the script [piclone_lsblk_exe.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk_exe.sh).
+Also we need to configure the path where the piclone_lsblk.sh will be executed in the script [piclone_lsblk_exe.sh](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/piclone_lsblk_exe.sh) and in the [Piclone.desktop file](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/Piclone.desktop).
 ```sh
-
+xfce4-terminal -H --geometry=+0+0 -e '/home/user/our_path' &
+```
+```sh
+Exec=bash /home/user/our_path
 ```
 ### Example
 Finally when we execute the script, something like this will appear. The disk shown in green it corresponds to the destination disk, the source disk will not have color, and the rest of the disks will appear in red.
