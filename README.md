@@ -44,8 +44,14 @@ xfce4-terminal -H --geometry=+0+0 -e '/home/user/our_path' &
 ```sh
 Exec=bash /home/user/our_path
 ```
+
 ### Example
-Finally when we execute the script, something like this will appear. The disk shown in green it corresponds to the destination disk, the source disk will not have color, and the rest of the disks will appear in red.
+Finally when we execute the [Piclone.desktop](https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/piclone/Piclone.desktop), the scripts will behave as the image.
+<p align="center">
+  <img width="350" height="200" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/images/scheme.png">
+</p>
+
+Something like this will appear. The disk shown in green it corresponds to the destination disk, the source disk will not have color, and the rest of the disks will appear in red.
 <p align="center">
   <img width="1090" height="330" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/images/example.png">
 </p>
