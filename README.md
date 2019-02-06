@@ -1,6 +1,6 @@
 # OS-Backup-for-Raspbery
 ### Description
-This script help you to know in which disk you can make a backup of your Raspbian OS.
+This script help you to know in which disk you can make a backup of your Raspbian OS. Only works fine with XFCE desktop enviroment.
 
 ### The problem
 I usually use Piclone to back up my Raspbian operating system. When we run this program, the source disk is obvious (`/dev/mmcblk0`), but the target disk is not so when you have two other disks connected to your Raspberry.
