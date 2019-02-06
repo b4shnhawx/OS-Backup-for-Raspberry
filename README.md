@@ -3,7 +3,7 @@
 This script help you to know in which disk you can make a backup of your Raspbian OS.
 
 ### The problem
-I usually use Piclone to back up my Raspbian operating system. When we run this program, the source disk is clear (/dev/mmcblk0), but the target disk is not so when you have two other disks connected to your Raspberry.
+I usually use Piclone to back up my Raspbian operating system. When we run this program, the source disk is obvious (`/dev/mmcblk0`), but the target disk is not so when you have two other disks connected to your Raspberry.
 
 <p align="center">
   <img width="437" height="174" src="https://github.com/davidahid/OS-Backup-for-Raspbery/blob/master/images/problem.png">
